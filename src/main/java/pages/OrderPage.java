@@ -48,7 +48,6 @@ public class OrderPage {
     public void clickToSubWayStationsSelector() {
         WebElement dropdown = driver.findElement(subWayStationsSelector);
         dropdown.click();
-
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement option = wait.until(ExpectedConditions.visibilityOfElementLocated(subWayStationNameCherkizovskaya));
         option.click();

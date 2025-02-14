@@ -1,4 +1,5 @@
 package tests;
+
 import Steps.MainPageSteps;
 import base.BaseTest;
 import jdk.jfr.Description;
@@ -6,8 +7,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
 import java.util.Arrays;
 import java.util.Collection;
+
 import static org.junit.Assert.assertTrue;
 
 
@@ -15,7 +18,6 @@ import static org.junit.Assert.assertTrue;
 public class FAQParameterizedTest extends BaseTest {
 
     private MainPageSteps mainPageSteps;
-
 
     @Parameterized.Parameter(0)
     public String questionLocator;
